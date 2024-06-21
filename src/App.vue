@@ -1,7 +1,7 @@
 <template>
   <AppLayout>
 
-    <div class="flex flex-col gap-10" >
+    <div class="flex flex-col p-5 gap-10" >
       <Introduction/>
       <Buttons/>
     </div>

@@ -5,7 +5,7 @@ import {GithubIcon} from 'lucide-vue-next'
 </script>
 
 <template>
-  <header class="max-w-4xl mx-auto py-5">
+  <header class="max-w-4xl mx-auto p-5">
     <nav class="flex justify-between items-center">
 
 

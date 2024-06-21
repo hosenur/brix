@@ -10,7 +10,7 @@ import {CheckIcon,BanIcon,AlertTriangleIcon} from "lucide-vue-next";
   <div class="flex flex-col gap-5">
 
     <h1 class="text-lg font-semibold">Buttons</h1>
-    <div class="flex flex-row gap-5">
+    <div class="flex flex-col md:flex-row gap-5 w-fit">
 
       <PrimaryButton>
         <CheckIcon class="h-4 w-4"/>
