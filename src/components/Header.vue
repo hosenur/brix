@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import PrimaryButton from "../UI/buttons/PrimaryButton.vue";
+import PrimaryButton from "../UI/buttons/solid/PrimaryButton.vue";
 import {GithubIcon} from 'lucide-vue-next'
 </script>
 
