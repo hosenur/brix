@@ -3,9 +3,7 @@
 
 <template>
     <main>
-        <ClientOnly>
 
             <ContentDoc />
-        </ClientOnly>
     </main>
   </template>
