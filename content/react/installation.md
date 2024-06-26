@@ -1,1 +1,1 @@
-# The installation page
+# The React installation page
