@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxt/content"]  ,
   routeRules: {
     '/': { prerender: true },
-    '/react': { prerender: true }
+    '/react': { ssr: false }
   }
 })
