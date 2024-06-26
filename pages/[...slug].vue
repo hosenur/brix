@@ -1,8 +1,5 @@
-<script setup lang="ts">
-</script>
-
 <template>
-    <main>
-        <ContentDoc />
-    </main>
+  <main>
+    <ContentDoc />
+  </main>
 </template>
