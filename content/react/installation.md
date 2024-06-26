@@ -1,1 +1,0 @@
-# The React installation page

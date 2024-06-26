@@ -1,102 +1,75 @@
-<script setup lang="ts">
-import { useRoute } from 'vue-router';
-import { computed } from 'vue';
-import '@fontsource-variable/onest';
-import Logo from "../components/Logo.vue";
+# Nuxt 3 Minimal Starter
 
-const route = useRoute();
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-const links = [
-    {
-        label: 'React',
-        icon: 'i-mdi-react',
-        to: '/react'
-    },
-    {
-        label: 'Vue',
-        icon: 'i-mdi-vuejs',
-        to: '/vue'
-    }
-];
+## Setup
 
-// const colorMode = useColorMode();
-// const isDark = computed({
-//     get() {
-//         return colorMode.value === 'dark';
-//     },
-//     set(value) {
-//         colorMode.preference = value ? 'dark' : 'light';
-//     }
-// });
+Make sure to install the dependencies:
 
-const verticalLinksVue = [
-    {
-        label: 'Overview',
-        icon: 'i-mdi-fruit-watermelon',
-        to: '/vue'
-    },
-    {
-        label: 'Installation',
-        icon: 'i-solar-code-square-bold',
-        to: '/vue/installation'
-    },
-    {
-        label: 'Horizontal Navigation',
-        icon: 'i-heroicons-chart-bar',
-        to: `${route.path.startsWith('/dev') ? '/dev' : ''}/components/horizontal-navigation`
-    },
-    {
-        label: 'Command Palette',
-        icon: 'i-heroicons-command-line',
-        to: '/components/command-palette'
-    }
-];
+```bash
+# npm
+npm install
 
-const verticalLinksReact = [
-    {
-        label: 'Overview',
-        icon: 'i-mdi-fruit-watermelon',
-        to: '/react'
-    },
-    {
-        label: 'Installation',
-        icon: 'i-solar-code-square-bold',
-        to: '/react/installation'
-    },
-    {
-        label: 'Horizontal Navigation',
-        icon: 'i-heroicons-chart-bar',
-        to: `${route.path.startsWith('/dev') ? '/dev' : ''}/components/horizontal-navigation`
-    },
-    {
-        label: 'Command Palette',
-        icon: 'i-heroicons-command-line',
-        to: '/components/command-palette'
-    }
-];
+# pnpm
+pnpm install
 
-// const verticalLinks = computed(() => route.path.startsWith('/vue') ? verticalLinksVue : verticalLinksReact);
-</script>
+# yarn
+yarn install
 
-<template>
-    <div class="border-b border-zinc-200 dark:border-zinc-800 font-onest">
-        <nav class="max-w-7xl mx-auto items-center justify-between flex">
-            <Logo />
+# bun
+bun install
+```
 
-            <UHorizontalNavigation :links="links" class="basis-0" />
-            <!-- <ClientOnly>
-                <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
-                    variant="ghost" aria-label="Theme" @click="isDark = !isDark" />
-                 <template #fallback>
-                    <div class="w-8 h-8" />
-                </template> 
-            </ClientOnly> -->
-        </nav>
-    </div>
-    <div class="max-w-7xl mx-auto py-5 flex gap-5 font-onest">
-        <UVerticalNavigation :links="verticalLinksVue" />
-        <main>
-            <slot />
-        </main>
-    </div>
-</template>
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
