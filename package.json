@@ -8,6 +8,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@fontsource-variable/onest": "^5.0.4",
     "@nuxt/content": "^2.12.1",
     "@nuxt/ui": "^2.17.0",
     "nuxt": "^3.12.1"
