@@ -75,7 +75,7 @@ const verticalLinksReact = [
     }
 ];
 
-const verticalLinks = computed(() => route.path.startsWith('/vue') ? verticalLinksVue : verticalLinksReact);
+// const verticalLinks = computed(() => route.path.startsWith('/vue') ? verticalLinksVue : verticalLinksReact);
 </script>
 
 <template>
@@ -94,7 +94,7 @@ const verticalLinks = computed(() => route.path.startsWith('/vue') ? verticalLin
         </nav>
     </div>
     <div class="max-w-7xl mx-auto py-5 flex gap-5 font-onest">
-        <UVerticalNavigation :links="verticalLinks" />
+        <UVerticalNavigation :links="verticalLinksVue" />
         <main>
             <slot />
         </main>
