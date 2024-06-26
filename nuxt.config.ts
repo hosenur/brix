@@ -2,8 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxt/content"]  ,
-  routeRules: {
-    '/': { prerender: true },
-    '/react': { ssr: false }
+  routeRules:{
+    '/': { prerender: true }
   }
 })
