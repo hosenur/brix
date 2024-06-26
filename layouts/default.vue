@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { computed } from 'vue';  // Import computed from Vue
+import { computed } from 'vue';
 import '@fontsource-variable/onest';
 import Logo from "../components/Logo.vue";
 
