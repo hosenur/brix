@@ -1,13 +1,17 @@
+const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons")
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.vue",
-  ],
+  content: [],
+  darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: {'jetbrains':["JetBrains Mono","monospace"]},
+      fontFamily: {'onest' : ['Onest Variable', 'sans-serif']},
     },
   },
-  plugins: [],
+  plugins: [
+    iconsPlugin({
+      collections: getIconCollections(['solar','mdi'])
+    })
+  ],
 }
+

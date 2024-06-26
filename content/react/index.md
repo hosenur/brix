@@ -1,0 +1,2 @@
+# Watermelon UI for React
+Watermelon is a collection of UI Components for React and Vue, Build with Headless UI and styled with Tailwind CSS. Watermelon like all other UI libraries like ui/shadcn, is just a set of components that you can copy and paste directly into your project.
