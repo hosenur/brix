@@ -1,5 +1,11 @@
+<script setup lang="ts">
+</script>
+
 <template>
     <main>
-      <ContentDoc />
+        <ClientOnly>
+
+            <ContentDoc />
+        </ClientOnly>
     </main>
   </template>
