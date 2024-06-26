@@ -3,6 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxt/content"]  ,
   routeRules: {
-    '/': { prerender: true }
+    '/**': { prerender: true }
   }
 })
