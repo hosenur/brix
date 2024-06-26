@@ -1,0 +1,1 @@
+installation page for vue
